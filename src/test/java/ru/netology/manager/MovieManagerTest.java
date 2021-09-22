@@ -11,6 +11,7 @@ class MovieManagerTest {
     Movie second = new Movie(2, 2, "second", "1", "1");
     Movie third = new Movie(3, 3, "third", "1", "1");
     Movie fourth = new Movie(4, 4, "fourth", "1", "1");
+    Movie fifth = new Movie(5, 5, "fifth", "1", "1");
 
     @Test
     public void shouldGetUnderLimit() {
@@ -30,9 +31,10 @@ class MovieManagerTest {
         manager.add(second);
         manager.add(third);
         manager.add(fourth);
+        manager.add(fifth);
 
         Movie[] actual = manager.getAll();
-        Movie[] expected = new Movie[]{third, second, first};
+        Movie[] expected = new Movie[]{fifth, fourth, third};
         assertArrayEquals(expected, actual);
     }
 
