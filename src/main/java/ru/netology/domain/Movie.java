@@ -15,6 +15,8 @@ public class Movie {
         this.imageUrl = imageUrl;
     }
 
+    public Movie() {}
+
     public int getId() {
         return id;
     }
@@ -54,5 +56,6 @@ public class Movie {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
 }
 
